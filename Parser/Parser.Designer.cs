@@ -1,4 +1,6 @@
-﻿namespace Parser
+﻿using ParseLibrary.Helpers;
+
+namespace Parser
 {
     partial class Parser
     {

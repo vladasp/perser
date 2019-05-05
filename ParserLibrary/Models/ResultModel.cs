@@ -2,7 +2,7 @@
 
 namespace Parser.Models
 {
-    public class LogModel
+    public class ResultModel
     {
         public DateTime Date { get; set; }
         public ComputerModel ComputerModel { get; set; }

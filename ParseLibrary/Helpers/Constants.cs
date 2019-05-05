@@ -1,4 +1,4 @@
-﻿namespace Parser
+﻿namespace ParseLibrary.Helpers
 {
     public static class Constants
     {
@@ -7,6 +7,8 @@
         public const string Uninstall = "--unistall";
 
         public const string ConfigurationsFileName = "config.json";
-        public const string LogFileName = "parserlog.json";
+        public const string ResultsFileName = "parserresults.json";
+
+        public const string ProcessedFolder = "processed";
     }
 }

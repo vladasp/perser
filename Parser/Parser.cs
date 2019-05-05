@@ -1,5 +1,4 @@
-﻿using Parser.Services;
-using System;
+﻿using ParseLibrary.Services;
 using System.ServiceProcess;
 using System.Timers;
 
@@ -27,7 +26,7 @@ namespace Parser
         private void SetupLogTimer(int interval)
         {
             _parseTimer = new Timer();
-            _parseTimer.Interval = 60 * 1000 * interval;
+            _parseTimer.Interval = 5 * 1000 * interval;
             _parseTimer.AutoReset = true;
             _parseTimer.Elapsed += ParseTimerElapsed;
             _parseTimer.Start();
@@ -35,11 +34,7 @@ namespace Parser
 
         private void ParseTimerElapsed(object sender, ElapsedEventArgs e)
         {
-            var computerModel =_fileReaderService.TryGetComputerModel();
-            if(computerModel != null)
-            {
-                _fileReaderService.AddComputerLog(DateTime.UtcNow, computerModel);
-            }
+            _fileReaderService.ProceedComputerLogs();
         }
     }
 }

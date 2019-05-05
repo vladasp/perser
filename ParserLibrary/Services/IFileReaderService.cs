@@ -1,12 +1,12 @@
 ﻿using Parser.Models;
 using System;
+using System.Collections.Generic;
 
 namespace Parser.Services
 {
     public interface IFileReaderService
     {
-        void AddComputerLog(DateTime dateTime, ComputerModel computerModel);
-        ComputerModel TryGetComputerModel();
+        void ProceedComputerLogs();
         ConfigurationModel Configurations { get; }
     }
 }
