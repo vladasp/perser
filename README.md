@@ -16,6 +16,6 @@ Windows service for monitoring and processing logs files
 4. The Parcer disappear in the Windows services list
 
 # App configurations
-  int LogUpdateInterval - parsing interval in minutes (default value 1);
-  string InputDataFolder - folder with files to process (default value "C:\\Parser\\InputFiles");
-  string OutputDataFolder - folder with parsing results file (default value "C:\\Parser\\Result");
+  *int* **LogUpdateInterval** - parsing interval in minutes (default value 1);    
+  *string* **InputDataFolder** - folder with files to process (default value "C:\\Parser\\InputFiles");    
+  *string* **OutputDataFolder** - folder with parsing results file (default value "C:\\Parser\\Result");    
