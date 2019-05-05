@@ -4,13 +4,13 @@ Windows service for monitoring and processing logs files
 # Installation
 1. Build the app
 2. Copy folder contents to the permanent place
-3. Run cmd
+3. Run cmd as admin
 4. Run command to go to the permanent place
 5. Run command to start the app with install parameter: start Parser.exe --install
 6. The Parcer appear in the Windows services list 
 
 # Denstallation
-1. Run cmd
+1. Run cmd as admin
 2. Run command to go to the permanent place
 3. Run command to start the app with unistall parameter: start Parser.exe --unistall
 4. The Parcer disappear in the Windows services list
