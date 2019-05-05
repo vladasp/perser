@@ -19,3 +19,4 @@ Windows service for monitoring and processing logs files
   *int* **LogUpdateInterval** - parsing interval in minutes (default value 1);    
   *string* **InputDataFolder** - folder with files to process (default value "C:\\Parser\\InputFiles");    
   *string* **OutputDataFolder** - folder with parsing results file (default value "C:\\Parser\\Result");    
+  *bool* **ShouldSaveProceedFiles** - sets whether to save processed files to "proceed" folder (default value true);
